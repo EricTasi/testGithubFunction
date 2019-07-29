@@ -154,9 +154,9 @@ class KnightTour {
                                int sol[][], int xMove[], 
                                int yMove[]) { 
         int k, next_x, next_y; 
- //       if (movei == N * N) 
-  //          return true; 
-  
+        if (movei == N * N) {
+            return true; 
+        }
         /* Try all next moves from the current coordinate 
             x, y */
         for (k = 0; k < 8; k++) { 
