@@ -14,6 +14,7 @@ public class Time2 {
         this(hour, 0, 0);
     }
 
+
     public Time2(int hour, int minute) {
         this(hour, minute, 0);
     }
@@ -39,7 +40,7 @@ public class Time2 {
         this(time.hour, time.minute, time.second);
     }
 
-    public void setTime(int hour, int minute, int second) {
+/*    public void setTime(int hour, int minute, int second) {
         if(hour < 0 || hour >= 24){
             throw new IllegalArgumentException("hour must be 0 - 23");
         }
@@ -77,7 +78,7 @@ public class Time2 {
         }
 
         this.second = second;
-    }
+    }*/
 
     public int getHour() {
         return hour;
