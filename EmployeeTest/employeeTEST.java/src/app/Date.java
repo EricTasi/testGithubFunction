@@ -30,7 +30,7 @@ public class Date {
         System.out.printf("Date object constructor for date %s%n", this);
     }
 
-    public String toString(){
+  /*  public String toString(){
         return String.format("%d/%d/%d", month, day, year);
-    }
+    }*/
 }

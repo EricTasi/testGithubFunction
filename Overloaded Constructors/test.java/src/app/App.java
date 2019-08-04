@@ -1,5 +1,7 @@
 package app;
 
+import java.security.SecureRandom;
+
 public class App {
     public static void main(String[] args) throws Exception {
         Time2 t1 = new Time2();
@@ -8,7 +10,13 @@ public class App {
         Time2 t4 = new Time2(12, 25, 42);
         Time2 t5 = new Time2(t4);
 
-        System.out.println("Constructed with:");
+        SecureRandom rs = new SecureRandom();
+        for(int i = 0; i < 500; i++){
+        int x = rs.nextInt(1000)/11+10;
+        
+        System.out.println(x);
+        }
+     /*   System.out.println("Constructed with:");
         displayTime("t1: all default arguments", t1);
         displayTime("t2: hour specified; default minute and second", t2);
         displayTime("t3: hour and minute specified; default second", t3);
@@ -25,7 +33,7 @@ public class App {
     }
 
     private static void displayTime(String header, Time2 t) {
-        System.out.printf("%s%n   %s%n   %s%n", header, t.toUniversalString(), t.toString());
+        System.out.printf("%s%n   %s%n   %s%n", header, t.toUniversalString(), t.toString());*/
     }
 
 }
